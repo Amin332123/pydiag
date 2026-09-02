@@ -16,9 +16,9 @@ def calculer_moyenne(notes) :
 def appreciation(moyenne) : 
     if moyenne < 10 : 
         return "Insuffisant"
-    elif moyenne >= 10 and moyenne <= 12 : 
+    elif moyenne >= 10 and moyenne < 12 : 
         return "Passable"
-    elif moyenne > 12 and moyenne < 16 : 
+    elif moyenne >= 12 and moyenne < 16 : 
         return "Bien"
     elif moyenne >= 16 : 
         return "Tres bien"
