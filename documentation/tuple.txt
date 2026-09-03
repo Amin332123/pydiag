@@ -1,0 +1,8 @@
+count()
+index() 
+
+len()
+max()
+min()
+sum()
+sorted()
