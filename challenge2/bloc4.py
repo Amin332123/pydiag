@@ -103,7 +103,7 @@ def final_challege(etudiants) :
         print(f"{key} : {value}")
     
     
-    max_avg_with_field = max([[k, round(sum(v) / len(v), 2)] for k , v in fields_with_values.items()])
+    max_avg_with_field = max([   [k, round(sum(v) / len(v), 2)] for k , v in fields_with_values.items()  ])
     
     
     print(f"Meilleure matiere (moyenne globale) : {max_avg_with_field[0]} ({max_avg_with_field[1]})")

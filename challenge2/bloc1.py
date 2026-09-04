@@ -72,24 +72,20 @@ def reverse(list_of_elements) :
 
 
 
-#liste_a = [1, 4, 7]
-#liste_b = [2, 3, 8, 9]
+liste_a = [1, 4, 7]
+liste_b = [2, 3, 8, 9]
 def fusion(list_a , list_b = []) : 
     final_result = list_a + list_b
     
     if (len(final_result) == 1) : 
         return final_result
-    min = final_result[0] 
-    for element in final_result[1::] : 
-        if element < min : 
-            min = element
+    min_value = min(final_result)
+    final_result.pop(final_result.index(min_value))
     
-    final_result.pop(final_result.index(min))
-    
-    return [min] + fusion(final_result) 
+    return [min_value] + fusion(final_result) 
 
 
-#print(fusion(liste_a , liste_b))
+print(fusion(liste_a , liste_b))
 
 
 
@@ -100,4 +96,4 @@ def power_of_even_numbers(numbers) :
     final_result = [pow(number, 2) for number in numbers if number % 2 == 0] 
     return final_result 
 
-print(power_of_even_numbers(nombres))
+#print(power_of_even_numbers(nombres))
